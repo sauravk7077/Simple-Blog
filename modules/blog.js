@@ -1,4 +1,3 @@
-const express = require('express');
 const mongoose = require('mongoose')
 
 
@@ -15,6 +14,6 @@ blogSchema = Schema({
     }
 }, {timestamp: true});
 
-var Blog = mongoose.Model('Blog', blogSchema);
+var Blog = mongoose.model('Blog', blogSchema);
 
 module.exports = Blog;
