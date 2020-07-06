@@ -26,6 +26,6 @@ app.use(express.urlencoded({extended:true}));
 app.use(blogRoutes);
 
 app.get('/', (req, res)=>{
-    res.render('index')
+    res.render('index', {title:"Home"});
 });
 

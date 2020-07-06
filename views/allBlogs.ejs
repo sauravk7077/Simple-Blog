@@ -1,11 +1,11 @@
 <%- include('./partials/head.ejs') %>
 <body>
-    <%- include('./partials/nav.ejs') %>
-    <div class="blogs">
+    <%- include('./partials/header.ejs') %>
+    <section id="blogs">
         <% for (i = 0;i<data.length;i++) { %> 
             <div class="title">
                 <%= data[i].title %> 
             </div>
         <% } %> 
-    </div> 
+    </section> 
 </body> 
